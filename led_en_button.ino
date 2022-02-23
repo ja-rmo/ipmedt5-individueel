@@ -1,23 +1,3 @@
-
-const int BUTTON = 10;
-bool pressed = false;
-
-void setup() {
-    pinMode(BUTTON, INPUT_PULLUP);
-    Serial.begin(9600);
-}
-
-void loop() {
-    if (!digitalRead(BUTTON)) {
-
-        delay(100);
-
-        if (!digitalRead(BUTTON) && !pressed) {
-            pressed = true
-            Serial.println("b");
-        }
-    } else {
-        pressed = falseconst int LED = 12;
 const int BUTTON = 10;
 
 int data = 0;
@@ -72,6 +52,4 @@ void loop() {
     pressed = false;
   }
 
-}
-    }
 }
